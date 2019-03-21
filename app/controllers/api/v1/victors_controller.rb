@@ -7,10 +7,10 @@ module Api
       def index
         victors = Victor.filter(victor_params)
 
-        render json: victors, meta: { pagination:
+        render json: { victors: victors, meta: { pagination:
                                           { per_page: params[:per_page],
                                             total_pages: victors.total_pages,
-                                            total_objects: victors.total_count } }
+                                            total_objects: victors.total_count } } }
       end
 
       protected
