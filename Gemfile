@@ -26,6 +26,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # gem 'rack-cors'
 
 # Database
+gem 'elasticsearch-model', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
+gem 'elasticsearch-rails', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
+gem 'kaminari-mongoid'
 gem 'mongoid'
 
 group :development, :test do
