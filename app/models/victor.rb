@@ -14,7 +14,5 @@ class Victor
   validates :name, presence: true
   validates :slug, presence: true, uniqueness: true
   validates :image_portrait, presence: true
-  validates :image_splash, presence: true
   validates :updated_at, presence: true
-  validates :image_card_background, presence: true
 end

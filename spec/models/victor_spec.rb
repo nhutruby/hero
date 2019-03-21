@@ -16,7 +16,5 @@ RSpec.describe Victor, type: :model do
   it { should validate_presence_of(:name) }
   it { should validate_presence_of(:slug) }
   it { should validate_presence_of(:image_portrait) }
-  it { should validate_presence_of(:image_splash) }
   it { should validate_presence_of(:updated_at) }
-  it { should validate_presence_of(:image_card_background) }
 end
