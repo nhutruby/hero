@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9ced18c-1abb-4b0f-9256-af8adf4fa767" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/victors_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/victors_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/api/v1/victors_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/v1/victors_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
-    </list>
+    <list default="true" id="f9ced18c-1abb-4b0f-9256-af8adf4fa767" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/log/" />
@@ -69,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/controllers/api/v1/victors_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+            <state relative-caret-position="630">
+              <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -428,16 +424,15 @@
       <updated>1553072107131</updated>
       <workItem from="1553072109067" duration="6834000" />
       <workItem from="1553135043370" duration="13477000" />
-      <workItem from="1553152289515" duration="22677000" />
+      <workItem from="1553152289515" duration="23728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42988000" />
+    <option name="totallyTimeSpent" value="44039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1299" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25778133" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -607,8 +602,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/api/v1/victors_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+        <state relative-caret-position="630">
+          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
         </state>
       </provider>
     </entry>
