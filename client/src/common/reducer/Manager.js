@@ -1,10 +1,10 @@
 import {combineReducers, compose, createStore, applyMiddleware} from 'redux';
-import AppReducer from '../../app/AppReducer';
+import SearchReducer from '../../search/SearchReducer';
 import sagaMiddleware from '../saga';
 // Define the Reducers that will always be present in the appication
 
 const staticReducers = {
-  AppReducer,
+  SearchReducer,
 };
 
 function createReducer (asyncReducers) {
