@@ -1,15 +1,14 @@
 const SearchReducer = (state, action) => {
   if (state === undefined) 
-    return [];
+    return {data: [], current_name: ""};
   
   switch (action.type) {
     case "SEARCH":
-      if (state.find(victor => victor.name === action.payload.name) === undefined) {
-        state = [
-          ...state, {
-            name: action.payload.name
-          }
-        ];
+      if (state.data.find(victor => victor.name === action.payload.name) === undefined) {
+        state = {
+          ...state,
+          current_name: action.payload.name
+        };
       }
       return state;
     case "SEARCH_FAIL":
@@ -19,7 +18,7 @@ const SearchReducer = (state, action) => {
       };
     case "SEARCH_SUCCESS":
       let victor = {};
-      victor = state.find(victor => victor.name === action.victor.meta.pagination.name) || {
+      victor = state.data.find(victor => victor.name === action.victor.meta.pagination.name) || {
         name: action.victor.meta.pagination.name
       };
       victor.list = victor.list || [];
@@ -40,8 +39,15 @@ const SearchReducer = (state, action) => {
           total_objects: action.victor.meta.pagination.total_objects
         }
       };
-      console.log(state);
-      return state;
+      const updatedArray = [
+        ...state.data,
+        victor
+      ];
+      return {
+        ...state,
+        data: updatedArray
+      };
+
     default:
       return state;
   }

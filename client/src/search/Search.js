@@ -155,7 +155,7 @@ class CSearch extends React.Component {
 
   handleChange = name => value => {
     this.setState({[name]: value});
-    if (value && this.props.suggestions.find(s => s.value === value.value) === undefined) {
+    if (value) {
       this.props.search({name: value.value});
     } else {
       this.props.search({name: ""});
@@ -194,8 +194,9 @@ const mapDispatchToProps = dispatch => {
   };
 };
 const mapStateToProps = state => {
-  let suggestions = state.SearchReducer.filter(v => v.name !== "").map(v => ({label: v.name, value: v.name}));
-  return {suggestions: suggestions, list: state.SearchReducer.list};
+  let suggestions = state.SearchReducer.data.filter(v => v.name !== "").map(v => ({label: v.name, value: v.name}));
+  console.log(state.SearchReducer);
+  return {suggestions: suggestions};
 };
 const Search = connect(mapStateToProps, mapDispatchToProps)(CSearch);
 
