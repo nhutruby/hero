@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Elasticsearch::Model.client = Elasticsearch::Client.new url: ENV['SEARCHBOX_URL'] || 'http://localhost:9200/'
+Elasticsearch::Model.client = Elasticsearch::Client.new url: 'http://paas:3d6cda50d5642cc3aab830d409b6c0f8@thorin-us-east-1.searchly.com' || 'http://localhost:9200/'
 
 Kaminari::Hooks.init if defined?(Kaminari::Hooks)
 Elasticsearch::Model::Response::
