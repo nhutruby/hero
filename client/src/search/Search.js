@@ -147,6 +147,34 @@ class CSearch extends React.Component {
   constructor(props) {
     super(props);
     this.props.search({name: ""});
+    this.state = {
+      page: 1
+    };
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+  handleScroll() {
+    if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight) 
+      return;
+    this.setState({
+      page: this.state.page + 1
+    });
+    //console.log(this.props);
+    setTimeout(() => {
+      this.props.search({
+        name: this.props.current_name
+          ? this.props.current_name
+          : "",
+        page: this.state.page
+      });
+    }, 500);
+
+    console.log("Fetch more list items!");
+  }
+  componentWillMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
   }
   state = {
     single: null,
@@ -155,7 +183,8 @@ class CSearch extends React.Component {
 
   handleChange = name => value => {
     this.setState({[name]: value});
-    console.log(value.value);
+    // console.log(value.value);
+    this.setState({page: 1});
     if (value) {
       this.props.search({name: value.value});
     } else {
@@ -196,8 +225,7 @@ const mapDispatchToProps = dispatch => {
 };
 const mapStateToProps = state => {
   let suggestions = state.SearchReducer.data.filter(v => v.name !== "").map(v => ({label: v.name, value: v.name}));
-  //console.log(state.SearchReducer);
-  return {suggestions: suggestions};
+  return {suggestions: suggestions, current_name: state.SearchReducer.current_name};
 };
 const Search = connect(mapStateToProps, mapDispatchToProps)(CSearch);
 

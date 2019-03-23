@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9ced18c-1abb-4b0f-9256-af8adf4fa767" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.rubocop.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.rubocop.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/victors_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/victors_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/list/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/list/Item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/list/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/list/List.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/search/Search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/search/SearchReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/search/SearchReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/search/SearchSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/search/SearchSaga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tasks/start.rake" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tasks/start.rake" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -57,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/victors_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+            <state relative-caret-position="261">
+              <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -448,12 +443,12 @@
       <workItem from="1553072109067" duration="6834000" />
       <workItem from="1553135043370" duration="13477000" />
       <workItem from="1553152289515" duration="23728000" />
-      <workItem from="1553297691558" duration="2727000" />
+      <workItem from="1553297691558" duration="3935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46766000" />
+    <option name="totallyTimeSpent" value="47974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1299" height="741" extended-state="6" />
@@ -472,7 +467,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289256" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20495868" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.24958678" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -634,8 +629,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/victors_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        <state relative-caret-position="261">
+          <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
         </state>
       </provider>
     </entry>

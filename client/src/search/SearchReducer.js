@@ -14,7 +14,7 @@ const SearchReducer = (state, action) => {
         error: action.message
       };
     case "SEARCH_SUCCESS":
-      console.log("................");
+      //console.log("................");
       //console.log(state);
       let victor = {};
 
@@ -40,7 +40,7 @@ const SearchReducer = (state, action) => {
               name: v._source.name,
               slug: v._source.slug,
               image_portrait: v._source.image_portrait,
-              image_splash: v._source.image_card_background,
+              image_splash: v._source.image_splash,
               updated_at: v._source.updated_at,
               image_card_background: v._source.image_card_background
             });
@@ -56,7 +56,7 @@ const SearchReducer = (state, action) => {
               name: v.name,
               slug: v.slug,
               image_portrait: v.image_portrait,
-              image_splash: v.image_card_background,
+              image_splash: v.image_splash,
               updated_at: v.updated_at,
               image_card_background: v.image_card_background
             });
@@ -88,10 +88,11 @@ const SearchReducer = (state, action) => {
         ...state,
         data: updatedArray
       };
-      console.log(state);
+      //console.log(state);
 
       return {
-        ...state
+        ...state,
+        dataLength: state.data.length
       };
 
     default:

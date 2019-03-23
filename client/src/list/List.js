@@ -9,8 +9,11 @@ const CList = props => {
 
 const mapStateToProps = state => {
   let list = state.SearchReducer.data.find(v => v.name === state.SearchReducer.current_name) || [];
-  console.log("a");
-  return {list: list};
+  console.log(list);
+  return {
+    list: list,
+    length: list.list && list.list.length
+  };
 };
 const List = connect(mapStateToProps)(CList);
 
