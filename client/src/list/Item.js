@@ -14,15 +14,14 @@ const styles = theme => ({
 });
 
 const Item = props => {
-  console.log(props);
   const {classes, victor} = props;
   return (<Paper className={classes.paper}>
-    <Grid container="container" wrap="nowrap" spacing={16}>
-      <Grid item="item">
+    <Grid container={true} wrap="nowrap" spacing={16}>
+      <Grid item={true}>
         <Avatar>{"W"}</Avatar>
       </Grid>
-      <Grid item="item" xs="xs" zeroMinWidth="zeroMinWidth">
-        <Typography noWrap="noWrap">{victor.slug}</Typography>
+      <Grid item={true} xs={false} zeroMinWidth={true}>
+        <Typography noWrap={false}>{victor.name}</Typography>
       </Grid>
     </Grid>
   </Paper>);

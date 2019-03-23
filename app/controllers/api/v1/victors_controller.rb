@@ -9,7 +9,6 @@ module Api
 
         render json: { victors: victors, meta: { pagination:
                                           { per_page: params[:per_page],
-					    name: params[:name],
                                             total_pages: victors.total_pages,
                                             total_objects: victors.total_count } } }
       end
