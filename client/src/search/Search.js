@@ -158,7 +158,6 @@ class CSearch extends React.Component {
     this.setState({
       page: this.state.page + 1
     });
-    //console.log(this.props);
     setTimeout(() => {
       this.props.search({
         name: this.props.current_name
@@ -183,7 +182,6 @@ class CSearch extends React.Component {
 
   handleChange = name => value => {
     this.setState({[name]: value});
-    // console.log(value.value);
     this.setState({page: 1});
     if (value) {
       this.props.search({name: value.value});

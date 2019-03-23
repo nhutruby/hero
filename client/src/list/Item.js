@@ -23,7 +23,6 @@ const styles = theme => ({
 
 const Item = props => {
   const {classes, victor} = props;
-  console.log(victor);
   return (<Paper className={classes.paper}>
     <Grid container={true} wrap="nowrap" spacing={16}>
       <Grid item={true}>
@@ -38,7 +37,7 @@ const Item = props => {
     </Grid>
 
     <Card className={classes.card}>
-      <CardMedia className={classes.media} image={victor.image_splash} title="Paella dish"/>
+      {victor.image_splash && (<CardMedia className={classes.media} image={victor.image_splash} title="Paella dish"/>)}
     </Card>
   </Paper>);
 };

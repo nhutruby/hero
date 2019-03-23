@@ -14,27 +14,18 @@ const SearchReducer = (state, action) => {
         error: action.message
       };
     case "SEARCH_SUCCESS":
-      //console.log("................");
-      //console.log(state);
       let victor = {};
 
       victor = state.data.find(victor => victor.name === state.current_name) || {
         name: state.current_name
       };
       victor.list = victor.list || [];
-      //console.log(state);
       const remove = state.data.map(function (i) {
         return i.name;
       }).indexOf(state.current_name);
-      //console.log(remove);
-      // remove object
-      //state.data.splice(remove, 1);
-      //console.log(state);
       if (state.current_name !== "") {
         action.victor.victors.forEach(function (v) {
-          //console.log(v);
           let index = victor.list.find(el => el && v._source && el.name === v._source.name);
-          //console.log(index);
           if (v._source && index === undefined) {
             victor.list.push({
               name: v._source.name,
@@ -48,10 +39,8 @@ const SearchReducer = (state, action) => {
         });
       } else {
         action.victor.victors.forEach(function (v) {
-          //console.log(v);
-          let index = victor.list.find(el => el.name === v.name);
-          //console.log(index);
-          if (index === undefined) {
+               let index = victor.list.find(el => el.name === v.name);
+            if (index === undefined) {
             victor.list.push({
               name: v.name,
               slug: v.slug,
@@ -70,15 +59,9 @@ const SearchReducer = (state, action) => {
           total_objects: action.victor.meta.pagination.total_objects
         }
       };
-      //console.log(victor);
-      //console.log(state);
-      if (remove !== -1) {
+       if (remove !== -1) {
         state.data.splice(remove, 1);
-        //state.data.push(victor);
       }
-      //console.log(state);
-      //console.log(state);
-
       const updatedArray = [
         ...state.data,
         victor
@@ -88,8 +71,7 @@ const SearchReducer = (state, action) => {
         ...state,
         data: updatedArray
       };
-      //console.log(state);
-
+  
       return {
         ...state,
         dataLength: state.data.length
